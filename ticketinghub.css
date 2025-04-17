@@ -156,8 +156,8 @@ padding:10px;}
 
 #checkout-times #times-header{
     padding: 0;
-    background: "black";
-    background-color: "black";
+    background: black;
+    background-color: black;
 }
 
 #checkout-times #times-header .title td{
