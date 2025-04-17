@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/Obviously/Obviously-Black.woff2') format('woff2'),
+         url('/fonts/Obviously/Obviously-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --jail-dark: #415161;
+    --jail-colour: #ed1c24;
+    --accent: #3B56EB
+}
+
+body{
+    font-family: Lexend,sans-serif;
+}
+#checkout.embed #checkout-wrapper>*:first-child, #checkout.button #checkout-wrapper>*:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#checkout-header{
+    background-color: #000; /* For browsers that do not support gradients */
+    padding:15px 20px;
+}
+
+#checkout-header .title{
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    display: block;
+    max-width:inherit;font-size:18px;font-weight:300;text-transform: uppercase;
+    font-family: Obviously, Lexend, sans-serif;
+    font-weight: "bold";
+}
+
+#checkout-header .locale{
+    background: #000;margin:15px 0 -15px;
+}
+#checkout-header .locale .col:first-child{width:40%;}
+#checkout-header .locale .col:last-child{width:60%;}
+.calendar-container table tbody tr{
+    border-bottom: 1px solid #6d6f71;
+    background: #000;
+}
+
+.calendar-container table tbody tr td{
+    padding: 0;
+}
+#checkout-calendar .calendar-header .btn-action{color:#fff;}
+#times-header .day.available,
+#checkout-calendar .calendar-body .day.available{
+    color: #fff;font-weight: 300;;
+    border-color: var(--jail-colour);
+    font-size: 18px;
+    border: none;
+    /*box-shadow: inset 0 0 0 2px var(--jail-colour);*/
+}
+
+#checkout.embed #checkout-wrapper,
+#checkout.button #checkout-wrapper,
+#checkout.checkout-sm.embed #checkout-wrapper,
+#checkout.checkout-sm.button #checkout-wrapper{
+    max-width: 100%;
+}
+#checkout-calendar > .row:first-child{padding:0 20px;background-color: #000;}
+#checkout-calendar .calendar-body .day{
+    line-height: 36px;
+    width: 36px;
+    border-radius: 0;color: #333; font-size: 18px;margin:0;border:0;
+}
+
+#checkout.button #checkout-header,
+#checkout.embed #checkout-header,
+#checkout-calendar .alpha,
+#checkout.embed #checkout-body{
+    border: none;
+}
+
+#checkout-calendar .calendar-body .day.available:hover{
+    background: #0094d7;
+    color: #fff;
+}
+#checkout-header .locale .lang, #checkout-header .locale .currency{padding:5px 15px;}
+#checkout-header .locale .lang .caret, #checkout-header .locale .currency .caret{transform: rotate(90deg);}
+#checkout-header .locale .flag{display:none;}
+#checkout-header .locale .lang{color:#666;text-transform: uppercase;padding-left:0;}
+#checkout-header .locale .dropdown .lang:hover{background-color:#000;color:#fff}
+#checkout-calendar .calendar-header,
+#checkout-calendar .calendar-header .month{
+    color: var(--jail-dark);
+}
+#checkout-calendar .calendar-header{border-bottom: 1px solid #6d6f71;}
+#checkout-calendar .calendar-header .title{border-bottom: 1px solid #6d6f71;}
+#checkout-header .locale .currency{color:#fff;text-transform: capitalize;text-align: center;}
+#checkout-header .locale{border-bottom:1px solid #6d6f71;border-top:1px solid #6d6f71}
+#checkout-header .locale .omega {    border-left: 1px solid #6d6f71;}
+#checkout-calendar .calendar-header .wdays{
+    background: #000;font-size:15px;
+}
+#checkout-calendar .calendar-header .wdays td{
+ padding-top: 7px;
+ color: #fff;
+}
+#checkout-calendar .calendar-body {padding: 0 0 10px;background-color: #000;}
+#checkout-calendar .calendar-header .title td{
+    padding-top: 3px;
+    padding-bottom: 3px;font-size:18px;
+    background: #000;
+}
+.calendar-footer .line span{color:#fff;background-color: #000;text-transform: uppercase;font-size:15px;font-weight:700;position:unset}
+.calendar-footer .line{border-bottom: 0;height:auto;padding: 10px 0 20px;}
+.calendar-footer{margin:0;background-color:#000;}
+.calendar-footer .voucher-button{padding:0;width:100%!important;}
+.calendar-footer .voucher-button button{background-color:#fff!important;color:#000!important;width: 100%; border-radius: 0;font-weight:300;font-size:22px;
+padding:10px;}
+.calendar-footer .voucher-button button:hover{color:#0094d7!important}
+#checkout.embed #checkout-wrapper,
+#checkout.button #checkout-wrapper{border-radius:0;background-color: #000;}
+#checkout-calendar .calendar-header .title td.month{
+    color: #fff;
+}
+#checkout-calendar .calendar-body .day.unavailable>.strike{top:20px;}
+#checkout-calendar .calendar-header .btn-action:hover{color:var(--acccent)!important}
+#times-header .day.available:hover, #times-header .day.available.current{
+    line-height: 36px;
+    width: 36px;
+    color: white;
+    background: var(--acccent);
+    border-radius: 0;
+}
+
+#checkout-customer > .checkbox{
+    padding-top: 10px;
+}
+
+#checkout-customer > .checkbox .checkbox-input{
+    top: 10px;
+}
+
+#checkout-header .order-expiration-timer{
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+}
+#checkout-header.with-order-expiration-timer {padding-bottom: 0;}
+#checkout-bottom{
+    display: none;
+}
+
+#checkout-times #times-header{
+    padding: 0;
+
+}
+
+#checkout-times #times-header .title{
+    background-color: black;
+}
+
+#checkout-times #times-header .title td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+#checkout-times #times-header .wdays td{
+    color: white;
+}
+
+#checkout-times #times-header .wdays td{
+    padding-top: 10px;
+}
+
+#checkout-times #times-body {
+    color: #fff;
+}
+
+.option.clearfix.available {
+    color: #fff;
+}
+
+
+#checkout.embed #checkout-header+#checkout-body{
+    padding-bottom: 0;background-color: #000;
+    color: #fff;
+    font-weight: 300;
+}
+
+#checkout-calendar{
+    padding-bottom: 0;margin: -10px -20px;
+}
+#checkout-events .event-list .event-option.active, #checkout-events .event-list .event-option:hover {
+    background: #000;color: var(--acccent);}
+#checkout-events .event-list .event-option .event-option-time{color:#fff;}
+#checkout-events .event-list .event-option:hover .event-option-time{color:var(--acccent);}
+.text-success{color:var(--acccent);}
+#times-header .day{margin:0;width:36px;line-height:36px;font-size:18px;color: #333;}
+#checkout-events #times-header{background-color: #000;padding: 0 20px;}
+#times-header .title{color: #fff;font-size: 18px;;}
+#times-header .wday-label{color: #fff;font-size: 15px;}
+#times-header .wdays td{padding-bottom: 0;}
+#times-header .day.unavailable>.strike,#checkout-calendar .calendar-body .day.unavailable>.strike{display:none;}
+#times-header .day.unavailable{border:0!important}
+#checkout-events .event-list .event-option{border-bottom: 1px solid #6d6f71;padding:10px 0;}
+#checkout-events .event-list .event-option:last-child{border-bottom: 1px solid #6d6f71;}
+#checkout-events .event-list{padding:0 20px 30px;}
+#checkout-events #times-header{border-bottom:0;}
+#checkout-events #times-header table{border-bottom: 1px solid #6d6f71;}
+#checkout-events .event-list .event-option .event-info{right:-6px;}
+#checkout-variants .variant .name{font-size: 18px;color:var(--acccent);}
+#checkout-variants .variant.radio .radio-input.active{display:none;}
+#checkout-variants .variant{padding:13px 0;border-bottom: 1px solid #6d6f71;}
+#checkout-variants{margin-left:0;margin-right:0;}
+#checkout-body{padding-left:20px;padding-right:20px;}
+#checkout-tickets .tier>.text-container>.name{color:#fff;font-size: 15px;font-weight:700;}
+#checkout-tickets .tier>.text-container>.price{font-size: 15px;color:#fff;}
+#checkout-tickets .tier>.text-container>.description{margin-top:2px;color:#fff;}
+#checkout-tickets .tier:hover>.text-container>.name{color:var(--acccent);}
+#checkout-tickets .tier>.text-container>.description::before{content:'('}
+#checkout-tickets .tier>.text-container>.description::after{content:')'}
+#checkout-footer{background-color: #fff;}
+#checkout-footer button{color: #000;padding: 10px 20px;}
+#checkout-footer button:hover{color:var(--acccent);background-color: transparent;}
+#checkout.embed #checkout-wrapper>*:last-child, #checkout.button #checkout-wrapper>*:last-child{border-radius: 0;}
+.checkout-discount .icon-discount, .summary-gift-cards .icon-discount{display:none;}
+.checkout-discount input, .summary-gift-cards input{padding-left: 0;border:0;background-color: #000;color:#fff}
+.checkout-discount{background-color: #000;margin-left:0;margin-right:0;padding-left:0;padding-right: 0;border-bottom: 1px solid #6d6f71;}
+#checkout-tickets .tier>.quantity>.plus,#checkout-tickets .tier>.quantity>.minus{background-color: transparent;}
+#checkout-tickets .tier>.quantity>.plus:hover,
+#checkout-tickets .tier>.quantity>.minus:hover{background-color: transparent;}
+#checkout-tickets .tier>.quantity>.plus .icon-plus,
+#checkout-tickets .tier>.quantity>.minus .icon-minus{color: #fff !important;font-size: 15px;font-weight: 300;}
+#checkout-tickets .tier>.quantity>.plus:hover .icon-plus,
+#checkout-tickets .tier>.quantity>.minus:hover .icon-minus{color: var(--acccent)!important}
+#checkout-tickets .tier>.quantity>.value{border-radius: 50%;border:1px solid #6d6f71;font-size: 15px;}
+#checkout-tickets .tier:last-child{border-bottom: 1px solid #6d6f71;margin-bottom: 20px;}
+#checkout-tickets .tier{border-top: 1px solid #6d6f71;    }
+.products-with-logos-and-descriptions .product.active,
+.products-with-logos-and-descriptions .product:hover{background-color: transparent;color:var(--acccent)}
+
+.input-collection>.form-group input,
+.input-collection>.form-group textarea,
+.input-collection>.form-group select{border-radius: 0!important;color:#fff;background-color: #000;font-size: 15px;}
+.input-collection>.form-group input::placeholder,
+.input-collection>.form-group textarea::placeholder{color:#666;}
+.form-group .form-control-icon{display:none;}
+.form-group.has-icon .form-control,.intl-tel-input{padding-left:0;}
+.input-collection{border:0;margin-bottom:0;}
+.input-collection>.form-group{border-bottom: 1px solid #6d6f71;border-top:0;}
+.intl-tel-input .selected-flag{left:0;}
+.intl-tel-input .selected-flag .iti-arrow{transform: rotate(90deg);}
+#checkout-header.with-order-expiration-timer + #checkout-body #checkout-customer{padding-top:0;border-top: 1px solid #6d6f71;}
+.checkbox label{color:#fff}
+.checkbox .checkbox-input{border-radius: 50%;background-color: transparent;border: 1px solid #6d6f71;}
+#checkout-summary,#checkout-summary .heading,#checkout-summary .body,#checkout-summary .total {
+    background-color: #000;
+}
+.checkout-discount,.summary-gift-cards{background-color: #000;}
+#checkout-summary .product-name,
+#checkout-summary .variant,
+#checkout-summary .coupon,
+#checkout-summary .total {
+    color: #fff;
+}
+
+#summary-gift-cards button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #6d6f71;
+    font-weight: 300;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;-webkit-text-fill-color: #ffffff;
+}
+#checkout-summary .product-name {
+    border-bottom: 1px solid #6d6f71;
+    padding-top: 8px;
+    border-top: 1px solid #6d6f71;
+    padding-bottom: 8px;
+}
+#checkout-summary .valid-from{margin-top:8px;}
+#checkout-summary table{font-size: 15px;}
+#checkout-summary{border-bottom:0;}
+#checkout-summary .tickets{margin:0;padding:10px 0;border-bottom: 1px solid #6d6f71;border-top: 1px solid #6d6f71;}
+.checkbox:hover .checkbox-input,.checkbox .checkbox-input.active{background-color:var(--acccent)!important}
+#checkout-summary .body{padding-top: 8px;}
+#checkout-summary:not(:last-child) .total{padding-top:0;padding-bottom:0;}
+#checkout-summary:not(:last-child) .total td{padding-bottom:10px;border-bottom:1px solid #6d6f71;}
+#checkout-summary:last-child .total td{font-size: 18px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #6d6f71;}
+#checkout-summary table .price{width:116px;}
+#checkout-payment .total,#checkout-payment .title{color:#fff;}
+#checkout-payment #card-number, #checkout-payment #card-exp, #checkout-payment #card-cvc, #checkout-payment #card-cvv{background-color:#000;color:#fff;}
+#checkout-payment #card-number, #checkout-payment #card-exp{padding-left: 0; padding-right: 0;}
+#checkout-payment #card-cvc, #checkout-payment #card-cvv{padding-right:0;padding-left:10px;}
+.card-input-group .number-group{border-bottom: 1px solid #6d6f71;}
+#checkout-payment .cvc-exp-group {height: 47px;border-bottom: 1px solid #6d6f71;}
+#checkout-payment .input-collection>.form-group:first-child{border-top: 1px solid #6d6f71;}
+#checkout-payment #card-exp{border-right:1px solid #6d6f71;}
+#checkout-payment .add-gift-card-message{margin-top:30px;}
+#checkout-payment .add-gift-card-message:hover{color:#0094d7}
+
+#checkout-header.with-order-expiration-timer .title {width: calc(100% - 75px);}
