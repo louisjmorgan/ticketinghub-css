@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('/fonts/Obviously/Obviously-Black.woff2') format('woff2'),
-         url('/fonts/Obviously/Obviously-Black.woff') format('woff');
+    src: url('https://supermassive.uk/fonts/Obviously/Obviously-Black.woff2') format('woff2'),
+         url('https://supermassive.uk/fonts/Obviously/Obviously-Black.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
