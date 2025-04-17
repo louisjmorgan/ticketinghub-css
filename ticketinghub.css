@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 @font-face {
-    font-family: 'CustomFont';
+    font-family: 'Obviously';
     src: url('https://supermassive.uk/fonts/Obviously/Obviously-Black.woff2') format('woff2'),
          url('https://supermassive.uk/fonts/Obviously/Obviously-Black.woff') format('woff');
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
 }
 
