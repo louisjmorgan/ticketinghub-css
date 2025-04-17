@@ -185,7 +185,7 @@ padding:10px;}
     color: #fff;
 }
 
-#times-body>.options>.option #hover {
+#times-body>.options>.option:hover {
     color: #000;
 }
     
