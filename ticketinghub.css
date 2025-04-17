@@ -181,11 +181,10 @@ padding:10px;}
     color: #fff;
 }
 
-.option.clearfix.available {
+#times-body>.options>.option {
     color: #fff;
 }
-
-
+    
 #checkout.embed #checkout-header+#checkout-body{
     padding-bottom: 0;background-color: #000;
     color: #fff;
