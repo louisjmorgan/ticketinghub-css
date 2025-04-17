@@ -184,6 +184,10 @@ padding:10px;}
 #times-body>.options>.option {
     color: #fff;
 }
+
+#times-body>.options>.option #hover {
+    color: #000;
+}
     
 #checkout.embed #checkout-header+#checkout-body{
     padding-bottom: 0;background-color: #000;
